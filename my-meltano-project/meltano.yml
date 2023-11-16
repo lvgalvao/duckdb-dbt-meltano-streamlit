@@ -1,0 +1,12 @@
+version: 1
+default_environment: dev
+project_id: 07fbf755-5071-4e47-b680-ec667317c74b
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-github
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-github.git
